@@ -1,0 +1,20 @@
+{
+  "name": "24points-cli",
+  "version": "1.0.0",
+  "description": "24points cli",
+  "repository": {},
+  "main": "index.js",
+  "bin": {
+    "24point": "./index.js"
+  },
+  "scripts": {
+    "start": "./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^5.0.0",
+    "inquirer": "^7.1.0"
+  }
+}
