@@ -21,7 +21,7 @@ const resolver = (...numbers) => {
                   if (result == 24) {
                     if (formula.name == 'formula1')
                       console.log (
-                        `${a} ${op1.alias} ((${b} ${op2.alias} ${c}) ${op3.alias} ${d})`
+                        `((${a} ${op1.alias} ${b}) ${op2.alias} ${c}) ${op3.alias} ${d}`
                       );
                     else
                       console.log (
@@ -52,7 +52,7 @@ ops[3].alias = '/';
 
 const formulas = [
   function formula1 (a, b, c, d, op1, op2, op3) {
-    return op1 (a, op3 (op2 (b, c), d));
+    return op3 (op2 (op1 (a, b), c), d);
   },
   function formula2 (a, b, c, d, op1, op2, op3) {
     return op2 (op1 (a, b), op3 (c, d));
